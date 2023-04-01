@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <link rel="stylesheet" link="/index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <script type="text/babel">
+        //babel converts JSX syntax into React before execution
+        const element = <h1 className="greeting">Hello World!</h1>; //JSX syntax
+        ReactDOM.render(element, document.getElementById("root"));
+      </script>
+    </div>
+  </body>
+</html>
